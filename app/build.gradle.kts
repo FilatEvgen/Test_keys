@@ -20,7 +20,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
-    
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -30,6 +30,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -51,9 +52,9 @@ dependencies {
     implementation(libs.okhttp.logging.interceptor)
     implementation(libs.converter.gson)
     implementation(libs.glide)
-    implementation(libs.androidx.room.ktx)
-    implementation(libs.androidx.room.runtime)
-    implementation(libs.androidx.room.compiler)
+//    implementation(libs.androidx.room.ktx)
+//    implementation(libs.androidx.room.runtime)
+//    implementation(libs.androidx.room.compiler)
     androidTestImplementation(libs.androidx.junit)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)

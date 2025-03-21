@@ -12,11 +12,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import ru.kosproger.data.CourseApiClient
-import ru.kosproger.data.CourseRepositoryImpl
-import ru.kosproger.data.RetrofitClient
-import ru.kosproger.data.AppDatabase
-import ru.kosproger.data.CourseDatabase
 import ru.kosproger.domain.models.CourseUseCase
 
 class MainFragment : Fragment() {
@@ -37,10 +32,10 @@ class MainFragment : Fragment() {
         recyclerView.adapter = courseAdapter
 
 
-        val remoteDataStore: CourseApiClient = RetrofitClient.courseApiClient
-        val localDataStore: CourseDatabase = AppDatabase.getDatabase(requireContext()).courseDao()
-        val courseRepository = CourseRepositoryImpl(localDataStore, remoteDataStore)
-        courseUseCase = CourseUseCase(courseRepository)
+//        val remoteDataStore: CourseApiClient = RetrofitClient.courseApiClient
+//        val localDataStore: CourseDatabase = AppDatabase.getDatabase(requireContext()).courseDao()
+//        val courseRepository = CourseRepositoryImpl(localDataStore, remoteDataStore)
+//        courseUseCase = CourseUseCase(courseRepository)
 
 
         loadCourses()
