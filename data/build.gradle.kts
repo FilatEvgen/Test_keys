@@ -39,7 +39,11 @@ dependencies {
     implementation(libs.androidx.material)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+    implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.runtime)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.0")
 }

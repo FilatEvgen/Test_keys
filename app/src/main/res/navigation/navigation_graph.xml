@@ -1,0 +1,15 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/entranceFragment">
+
+    <fragment
+        android:id="@+id/entranceFragment"
+        android:name="ru.kosproger.testkeys.EntranceFragment"
+        tools:layout="@layout/entrance" />
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.kosproger.testkeys.MainFragment"
+        tools:layout="@layout/fragment_main" />
+</navigation>

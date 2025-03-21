@@ -51,7 +51,12 @@ dependencies {
     implementation(libs.okhttp.logging.interceptor)
     implementation(libs.converter.gson)
     implementation(libs.glide)
+    implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.compiler)
     androidTestImplementation(libs.androidx.junit)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(project(":data"))
+    implementation(project(":domain"))
 }
